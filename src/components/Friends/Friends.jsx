@@ -6,12 +6,12 @@ import Paginator from "../Users/Paginator"
 
 
 const Friends = (props) => {
-
+    
     return <div className={s.wrapper}>
         <Paginator setPortionNumberThunk={props.setPortionNumberThunk} currentPage={props.currentPage}
             onPageChanged={props.onPageChanged} totalUsersCount={props.totalUsersCount}
             pageSize={props.pageSize} currentPortionNumber={props.currentPortionNumber} />
-
+          
         {
             props.users.map(u => u.followed &&
                 <div key={u.id} className={s.userWrapper}>

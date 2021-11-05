@@ -9,6 +9,8 @@ const SET_TOTAL_USERS_COUNT = 'SET_TOTAL_USERS_COUNT'
 const TOGGLE_IS_LOADING = 'TOGGLE_IS_LOADING'
 const TOGGLE_IS_FOLLOWING = 'TOGGLE_IS_FOLLOWING'
 const SET_PORTION_NUMBER = 'SET_PORTION_NUMBER'
+const SET_FRIENDS_PORTION_NUMBER = 'SET_FRIENDS_PORTION_NUMBER'
+
 
 let initialState = {
     users: [],
@@ -18,6 +20,7 @@ let initialState = {
     isLoading: false,
     followingUsers: [],
     friendsCurrentPage: 1,
+    friendsCurrentPortionNumber: 1,
     currentPortionNumber: 1
 
 }
@@ -67,6 +70,8 @@ const usersReducer = (state = initialState, action) => {
             }
         case SET_PORTION_NUMBER: 
             return {...state, currentPortionNumber: action.currentPortionNumber}
+        case SET_FRIENDS_PORTION_NUMBER: 
+            return {...state, friendsCurrentPortionNumber: action.currentPortionNumber}
         default:
             return state
     }
@@ -126,9 +131,12 @@ export const unfollowFriendsThunk = (userId, currentPage, pageSize, friend) => a
     dispatch(toggleIsFollowing(false, userId))
 }
 
-
 export const setPortionNumberThunk = (currentPortionNumber) => async (dispatch) => {
     dispatch(setPortionNumberAC(currentPortionNumber))
+}
+
+export const setFriendsPortionNumberThunk = (currentPortionNumber) => async (dispatch) => {
+    dispatch(setFriendsPortionNumberAC(currentPortionNumber))
 }
 
 
@@ -168,5 +176,11 @@ export const toggleIsFollowing = (isLoading, userId) => ({
 export const setPortionNumberAC = (currentPortionNumber) => ({
     type: SET_PORTION_NUMBER, currentPortionNumber
 })
+
+export const setFriendsPortionNumberAC = (currentPortionNumber) => ({
+    type: SET_FRIENDS_PORTION_NUMBER, currentPortionNumber
+})
+
+
 
 export default usersReducer

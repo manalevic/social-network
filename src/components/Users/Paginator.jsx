@@ -18,15 +18,13 @@ const Paginator = (props) => {
     let portionLeftPageNumber = (portionNumber - 1) * portionSize + 1
     let portionRightPageNumber = portionNumber * portionSize
 
-
+  
     const onChangePortionNumber = (currentPortionNumber) => {
         props.setPortionNumberThunk(currentPortionNumber)
     }   
-
     useEffect(() => {
         setPortionNumber(props.currentPortionNumber)
     },[props.currentPortionNumber])
-
     return (
         <div className={s.pagination}>
             {portionNumber > 1 && <button onClick={() => onChangePortionNumber(portionNumber - 1)}> Back </button>}
@@ -38,7 +36,7 @@ const Paginator = (props) => {
 
         </div>
     )
-
+    
 
 
 }

@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import { getUsersThunk, onPageChangedThunk, followThunk, unfollowFriendsThunk, setPortionNumberThunk} from "../../redux/users-reducer";
+import { getUsersThunk, onPageChangedThunk, followThunk, unfollowFriendsThunk, setFriendsPortionNumberThunk} from "../../redux/users-reducer";
 import { withAuthRedirect } from "../../hoc/withAuthRedirect"
 import React from "react"
 import Preloader from "../common/Preloader/Preloader";
@@ -14,7 +14,7 @@ class FriendsContainer extends React.Component {
     onPageChanged = (pageNumber) => {
         this.props.onPageChangedThunk(pageNumber, this.props.pageSize, true)
     }
-
+    
 
     render() {
         return <>
@@ -29,7 +29,7 @@ class FriendsContainer extends React.Component {
                 unfollowFriendsThunk= {this.props.unfollowFriendsThunk}
                 portionSize= {this.props.portionSize}
                 getUsersThunk={this.props.getUsersThunk}
-                setPortionNumberThunk= {this.props.setPortionNumberThunk}
+                setPortionNumberThunk= {this.props.setFriendsPortionNumberThunk}
                 currentPortionNumber={this.props.currentPortionNumber}
             />
 
@@ -45,11 +45,11 @@ let mapStateToProps = (state) => {
         currentPage: state.usersPage.friendsCurrentPage,
         isLoading: state.usersPage.isLoading,
         followingUsers: state.usersPage.followingUsers,
-        currentPortionNumber: state.usersPage.currentPortionNumber
+        currentPortionNumber: state.usersPage.friendsCurrentPortionNumber
     }
 }
 
 export default compose(
-    connect(mapStateToProps, { getUsersThunk, onPageChangedThunk, followThunk, unfollowFriendsThunk,setPortionNumberThunk}),
+    connect(mapStateToProps, { getUsersThunk, onPageChangedThunk, followThunk, unfollowFriendsThunk,setFriendsPortionNumberThunk}),
     withAuthRedirect
 )(FriendsContainer)
