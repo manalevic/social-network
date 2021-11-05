@@ -1,0 +1,111 @@
+.icoWrapper {
+    min-width: 80px;
+    max-width: 80px;
+}
+
+.ico{
+    border-radius: 40px;
+}
+
+.wrapper {
+    margin: 0 auto;
+    background-color: #424242;
+    border-radius: 7px;
+}
+
+.userWrapper:last-child .user {
+    border-bottom: none;
+}
+
+.user {
+    display: flex;
+    gap: 10px;
+    border-bottom: solid 1px gray;
+    padding: 10px 0;
+    margin: 0 50px;
+}
+
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-grow: 1;
+    font-size: 25px;
+}
+.desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.desc .button {
+    width: 76px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    background-color: #828282;
+    color: white;
+    padding: 3px;
+}
+
+.desc .button:disabled {
+    background-color: #5e5a5a;
+
+}
+
+.fullName{
+    font-size: 28px;
+    color: white;
+}
+
+.status{
+    font-size: 16px;
+    color: gray;
+}
+
+.pagination {
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    padding: 10px 0;
+    justify-content: center;
+}
+
+.pagination button {
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #828282;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.pagination div {
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 23px;
+    text-align: center;
+    background-color: #828282;
+    margin-right: 5px;
+    padding: 2px 2px;
+    cursor: pointer;
+    min-width: 27px;
+    min-height: 27px;
+}
+
+.pagination div:focus, .pagination div:hover {
+    background-color: #686464;
+}
+
+div .selectedPage {
+    background-color: #252323;
+    
+}
+
+.location {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}

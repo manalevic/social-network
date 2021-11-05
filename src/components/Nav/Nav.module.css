@@ -1,0 +1,28 @@
+.nav {
+    
+  }
+  
+.list {
+  list-style-type: none;
+  padding: 10px 10px;
+}
+  
+.item {
+  padding-top: 7px;
+}
+  
+.link {
+  text-decoration: none;
+  color: gray
+}
+  
+.link.active {
+    text-decoration: none;
+    color: white;
+}
+
+.item:last-child{
+  padding-top: 12px;
+  text-decoration: none;
+  color: black;
+}

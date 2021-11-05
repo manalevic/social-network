@@ -1,0 +1,47 @@
+.dialogs {
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+    padding: 20px;
+    gap: 20px;
+}
+
+.list {
+    background-color: #424242;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+.messages {
+    background-color: #424242;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+.item {
+    padding-top: 6px;
+}
+
+.link {
+    text-decoration: none;
+    color: gray;
+}
+
+.link.active {
+    color: white;
+    text-decoration: none;
+}
+
+.message {
+    margin-top: 7px;
+    color: white;
+    padding: 5px;
+    border: none;
+    border-radius: 7px;
+    background-color: gray;
+    border: solid gray 1px;
+    color: white;
+}
+
+form {
+    padding-top: 20px;
+}

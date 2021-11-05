@@ -1,0 +1,48 @@
+.postsWrapper {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: ". p";
+    gap: 15px;
+}
+
+.posts {
+    grid-area: p;
+    width: 100%;
+    background-color: #424242;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+.addPostContainer{
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    border-bottom: solid 1px gray;
+    padding-bottom: 10px;
+}
+
+.addPostContainer .avatar {
+    height: 40px;
+    border-radius: 30px;
+    margin-right: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+form button{
+    align-self: flex-end;
+    font-size: 18px;
+    width: 20%;
+    border-radius: 5px;
+    border: none;
+    background-color: #828282;
+    color: white;
+    padding: 5px;
+}
+
+form button:focus, form button:hover {
+    background-color: #5e5a5a;
+  }

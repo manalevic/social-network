@@ -1,0 +1,72 @@
+.settings {
+    background-color: #424242;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+.settings h1 {
+    font-size: 30px;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.changePhoto .title {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.inputBlock{
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+    align-items: center;
+}
+
+.inputWrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.fileInfo {
+    padding: 5px;
+    border: solid gray 1px;
+    border-right: none;
+    border-radius: 7px 0 0 7px;
+    background-color: #424242;
+    color: white;
+}
+
+.choosegFileButton {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius:  0 7px 7px 0;
+    border: none;
+    background-color: #828282;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.choosegFileButton:focus, .choosegFileButton:hover {
+    background-color: #5e5a5a;
+  }
+
+.changePhoto button {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 7px;
+    border: none;
+    background-color: #828282;
+    color: white;
+    padding: 5px;
+}
+
+.changePhoto button:disabled {
+    background-color:#5e5a5a;
+}
+
+.changePhoto button:focus, .changePhoto button:hover {
+    background-color: #5e5a5a;
+  }

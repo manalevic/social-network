@@ -1,0 +1,56 @@
+.header {
+  background-color: #424242;
+  margin-bottom: 15px;
+  width: 100%;
+  
+}
+  
+
+.content{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 960px;
+  margin: 0 auto;
+ 
+  
+  align-items: center;
+  height: 50px;
+}
+
+.logoBlock {
+  color: gray;
+  font-size: 30px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.logo {
+  max-width: 40px;
+  margin-right: 5px;
+}
+
+.loginBlock {
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.loginBlock a{
+  color: white;
+  text-decoration: none;
+}
+
+.loginModeMenu {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  width: 160px;
+  background-color: #555556;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 0 0 7px 7px;
+  cursor: pointer;
+}
+  
