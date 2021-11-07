@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/social-network/static/css/main.049079e2.chunk.css",
+    "main.js": "/social-network/static/js/main.37937af5.chunk.js",
+    "main.js.map": "/social-network/static/js/main.37937af5.chunk.js.map",
+    "runtime-main.js": "/social-network/static/js/runtime-main.d04ecb73.js",
+    "runtime-main.js.map": "/social-network/static/js/runtime-main.d04ecb73.js.map",
+    "static/js/2.e24b9c1d.chunk.js": "/social-network/static/js/2.e24b9c1d.chunk.js",
+    "static/js/2.e24b9c1d.chunk.js.map": "/social-network/static/js/2.e24b9c1d.chunk.js.map",
+    "static/css/3.3965d3d3.chunk.css": "/social-network/static/css/3.3965d3d3.chunk.css",
+    "static/js/3.d0b5a5bd.chunk.js": "/social-network/static/js/3.d0b5a5bd.chunk.js",
+    "static/js/3.d0b5a5bd.chunk.js.map": "/social-network/static/js/3.d0b5a5bd.chunk.js.map",
+    "static/css/4.3965d3d3.chunk.css": "/social-network/static/css/4.3965d3d3.chunk.css",
+    "static/js/4.2456185b.chunk.js": "/social-network/static/js/4.2456185b.chunk.js",
+    "static/js/4.2456185b.chunk.js.map": "/social-network/static/js/4.2456185b.chunk.js.map",
+    "static/css/5.7b7859d1.chunk.css": "/social-network/static/css/5.7b7859d1.chunk.css",
+    "static/js/5.fc8f4bd5.chunk.js": "/social-network/static/js/5.fc8f4bd5.chunk.js",
+    "static/js/5.fc8f4bd5.chunk.js.map": "/social-network/static/js/5.fc8f4bd5.chunk.js.map",
+    "index.html": "/social-network/index.html",
+    "static/css/3.3965d3d3.chunk.css.map": "/social-network/static/css/3.3965d3d3.chunk.css.map",
+    "static/css/4.3965d3d3.chunk.css.map": "/social-network/static/css/4.3965d3d3.chunk.css.map",
+    "static/css/5.7b7859d1.chunk.css.map": "/social-network/static/css/5.7b7859d1.chunk.css.map",
+    "static/css/main.049079e2.chunk.css.map": "/social-network/static/css/main.049079e2.chunk.css.map",
+    "static/js/2.e24b9c1d.chunk.js.LICENSE.txt": "/social-network/static/js/2.e24b9c1d.chunk.js.LICENSE.txt",
+    "static/media/like-ico-clicked.4c4725c1.svg": "/social-network/static/media/like-ico-clicked.4c4725c1.svg",
+    "static/media/like-ico.665ede1a.svg": "/social-network/static/media/like-ico.665ede1a.svg",
+    "static/media/user.jpg": "/social-network/static/media/user.f8ec10c3.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d04ecb73.js",
+    "static/js/2.e24b9c1d.chunk.js",
+    "static/css/main.049079e2.chunk.css",
+    "static/js/main.37937af5.chunk.js"
+  ]
+}
