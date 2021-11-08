@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import { setProfileThunk, setStatusThunk, updateStatusThunk, setPhotoThunk, saveProfileThunk, addPostThunk, likeThunk, unlikeThunk} from "../../redux/profile-reducer";
-import { followThunk, unfollowThunk } from "../../redux/users-reducer";
+import { followThunk, unfollowThunk,getUsersThunk } from "../../redux/users-reducer";
 import React from 'react'
 import Profile from './Profile'
 import { withRouter } from 'react-router';
@@ -27,6 +27,7 @@ class ProfileContainer extends React.Component {
 
     componentDidMount() {
         this.DoingProfileStuffFc()
+        this.props.getUsersThunk(1, 100, true)
     }
     
     componentDidUpdate(prevP, prevS) {
@@ -58,7 +59,7 @@ let mapStateToProps = (state) => {
 }
 
 export default compose(
-    connect(mapStateToProps, { setProfileThunk, setStatusThunk, updateStatusThunk, setPhotoThunk, saveProfileThunk, followThunk, unfollowThunk, addPostThunk, likeThunk, unlikeThunk}),
+    connect(mapStateToProps, { setProfileThunk, setStatusThunk, updateStatusThunk, setPhotoThunk, saveProfileThunk, followThunk, unfollowThunk, addPostThunk, likeThunk, unlikeThunk, getUsersThunk}),
     withRouter
 
 )(ProfileContainer)

@@ -48,10 +48,6 @@
   padding: 5px;
 }
 
-.followButton:disabled {
-  background-color: #5e5a5a;
-}
-
 .followButton:focus, .followButton:hover {
   background-color: #5e5a5a;
 }

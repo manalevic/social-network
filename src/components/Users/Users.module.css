@@ -51,7 +51,10 @@
 
 .desc .button:disabled {
     background-color: #5e5a5a;
+}
 
+.desc .button:focus,.desc .button:hover {
+    background-color: #5e5a5a;
 }
 
 .fullName{
