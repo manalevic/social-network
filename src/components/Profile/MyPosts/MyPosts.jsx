@@ -24,11 +24,12 @@ const MyPostsReduxForm = reduxForm({ form: 'posts' })(MyPostsForm)
 
 
 const MyPosts = (props) => {
-
+    
     const onSubmit = (formData, dispatch) => {
         props.addPostThunk(formData.postElement)
         dispatch(reset("posts"))
     }
+
     let postsElements = props.postsData.map((post) => 
     <Post avatar={props.profile !== null ? props.profile.photos.small : null} key={post.id} id={post.id} message={post.message} likesCount={post.likesCount} likeThunk={props.likeThunk} unlikeThunk={props.unlikeThunk}/>)
     
@@ -36,7 +37,7 @@ const MyPosts = (props) => {
         <div className={s.postsWrapper}>
             <div className={s.posts}>
                 <div className={s.addPostContainer}>
-                    {props.profile !== null ? <img className={s.avatar} src={props.profile.photos.small} alt=""></img> : <img src={`${UserImage}`} className={s.avatar} alt='' />}
+                    {props.profile !== null && props.profile.photos.small !== null ? <img className={s.avatar} src={props.profile.photos.small} alt=""></img> : <img src={`${UserImage}`} className={s.avatar} alt='' />}
                     <MyPostsReduxForm onSubmit={onSubmit} />
                 </div>
                 

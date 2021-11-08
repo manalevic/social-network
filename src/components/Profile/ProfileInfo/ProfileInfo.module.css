@@ -11,8 +11,8 @@
 .avatar {
   background-color: #424242;
   border-radius: 7px;
-  max-height: 230px;
   padding: 10px;
+  max-height: 230px;
 }
 
 .avatar > .img {
@@ -199,4 +199,10 @@
 .error textarea
 {
     border: solid red 1px
+}
+
+.noContactInfo {
+  color: gray;
+  font-size: 23px;
+  margin: auto auto;
 }
